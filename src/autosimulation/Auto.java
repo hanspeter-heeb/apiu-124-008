@@ -1,7 +1,12 @@
 package autosimulation;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Auto
 {
+	@SuppressWarnings("unused")
+	private List<Rad> raeder = new ArrayList<Rad>();
 
 	private double rost;
 
