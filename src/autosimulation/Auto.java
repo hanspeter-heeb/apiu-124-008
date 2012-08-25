@@ -17,9 +17,9 @@ public class Auto
 	
 	public void fahre()
 	{
-		for (int i = 0; i < raeder.size(); i++)
+		for (Rad r : raeder)
 		{
-			raeder.get(i).drehe();
+			r.drehe();
 		}
 	}
 	
