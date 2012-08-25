@@ -14,6 +14,14 @@ public class Auto
 	{
 		return rost;
 	}
+	
+	public void setRaeder(int anzahl)
+	{
+		for (int i = 0; i < anzahl; i++)
+		{
+			raeder.add(new Rad());
+		}
+	}
 
 	public void rostEntfernen()
 	{
