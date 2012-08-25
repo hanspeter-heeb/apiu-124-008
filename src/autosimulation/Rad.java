@@ -6,4 +6,9 @@ public class Rad
 	{
 		System.out.println("Rad montiert.");
 	}
+
+	public void drehe()
+	{
+		System.out.println("summ!");
+	}
 }

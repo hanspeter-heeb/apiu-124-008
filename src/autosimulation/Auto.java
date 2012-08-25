@@ -15,6 +15,14 @@ public class Auto
 		return rost;
 	}
 	
+	public void fahre()
+	{
+		for (int i = 0; i < raeder.size(); i++)
+		{
+			raeder.get(i).drehe();
+		}
+	}
+	
 	public void setRaeder(int anzahl)
 	{
 		for (int i = 0; i < anzahl; i++)
