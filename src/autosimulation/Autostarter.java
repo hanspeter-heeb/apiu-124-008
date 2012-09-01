@@ -8,7 +8,7 @@ public class Autostarter
 	 */
 	public static void main(String[] args)
 	{
-		Auto a = new Auto();
+		Auto a = new Sportwagen();
 		a.setRaeder(6);
 		a.setRost(9.9);
 		System.out.println(a.getRost());

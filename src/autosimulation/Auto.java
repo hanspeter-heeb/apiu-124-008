@@ -3,7 +3,7 @@ package autosimulation;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Auto
+public abstract class Auto
 {
 	@SuppressWarnings("unused")
 	private List<Rad> raeder = new ArrayList<Rad>();
@@ -21,8 +21,11 @@ public class Auto
 		{
 			r.drehe();
 		}
+		motorGeraeusch();
 	}
 	
+	abstract protected void motorGeraeusch();
+
 	public void setRaeder(int anzahl)
 	{
 		for (int i = 0; i < anzahl; i++)
