@@ -9,7 +9,7 @@ public class Autostarter
 	public static void main(String[] args)
 	{
 		
-		Motor m = new Dieselmotor();
+		Hoerbar m = new Dieselmotor();
 		Auto a = new Auto(m);
 		a.setRaeder(6);
 		a.setRost(9.9);

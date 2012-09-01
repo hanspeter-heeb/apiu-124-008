@@ -1,10 +1,10 @@
 package autosimulation;
 
-public class Dieselmotor extends Motor
+public class Dieselmotor implements Hoerbar
 {
 
 	@Override
-	protected void laufe()
+	public void laufe()
 	{
 		System.out.println("Bluber bluber");
 	}

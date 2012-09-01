@@ -10,9 +10,9 @@ public class Auto
 
 	private double rost;
 
-	private Motor motor;
+	private Hoerbar motor;
 
-	public Auto(Motor m)
+	public Auto(Hoerbar m)
 	{
 		this();
 		motor = m;
