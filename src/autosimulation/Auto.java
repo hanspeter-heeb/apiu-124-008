@@ -10,6 +10,19 @@ public class Auto
 
 	private double rost;
 
+	private Motor motor;
+
+	public Auto(Motor m)
+	{
+		this();
+		motor = m;
+	}
+
+	public Auto()
+	{
+		super();
+	}
+
 	public double getRost()
 	{
 		return rost;
@@ -21,6 +34,7 @@ public class Auto
 		{
 			r.drehe();
 		}
+		motor.laufe();
 	}
 	
 	public void setRaeder(int anzahl)
