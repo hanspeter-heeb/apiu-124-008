@@ -17,6 +17,7 @@ public class Autostarter
 		a.rostEntfernen();
 		a.fahre();
 		System.out.println(a.getRost());
+		a=null;
 	}
 
 }

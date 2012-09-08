@@ -1,6 +1,6 @@
 package autosimulation;
 
-public interface Hoerbar
+interface Hoerbar
 {
 	abstract void laufe();
 	
