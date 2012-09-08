@@ -1,6 +1,7 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -50,6 +51,16 @@ public class Autor
 	public void setBuecher(List<Buch> buecher)
 	{
 		this.buecher = buecher;
+	}
+	
+	public void buecherAuflistenAlteVersion()
+	{
+		Iterator<Buch> it = buecher.iterator();
+		while(it.hasNext())
+		{
+			Buch b = it.next();
+			System.out.println(b.getTitel());
+		}
 	}
 	
 	public void buecherAuflisten()
