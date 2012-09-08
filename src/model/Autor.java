@@ -52,7 +52,13 @@ public class Autor
 		this.buecher = buecher;
 	}
 	
-	
+	public void buecherAuflisten()
+	{
+		for (Buch b : buecher)
+		{
+			System.out.println(b.getTitel());
+		}
+	}
 	
 	
 }

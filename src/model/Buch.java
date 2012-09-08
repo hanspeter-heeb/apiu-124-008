@@ -1,5 +1,7 @@
 package model;
 
+import java.util.List;
+
 public class Buch
 {
 	private static final int NOT_SAVED=-1;
