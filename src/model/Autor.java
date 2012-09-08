@@ -4,12 +4,13 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Vector;
 
 public class Autor
 {
 	private String name;
 	private String vorname;
-	private List<Buch> buecher = new LinkedList<Buch>();
+	private List<Buch> buecher= new Vector<Buch>();
 	public String getName()
 	{
 		return name;
