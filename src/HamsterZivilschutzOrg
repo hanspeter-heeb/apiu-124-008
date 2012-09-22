@@ -1,3 +1,5 @@
+import java.util.*;
+
 void main() {
     ZivilSchutzChef zsc = new ZivilSchutzChef();
 	zsc.init(1,2,Hamster.OST,20);
@@ -5,6 +7,8 @@ void main() {
 }
 class ZivilSchutzChef extends Hamster
 {
+	List<Tuersteher> tuersteher = new ArrayList<Tuersteher>();
+
 	void aufbieten()
 	{
 		while(getSpalte()!=1 || getReihe()!=1)
@@ -55,6 +59,17 @@ class ZivilSchutzChef extends Hamster
 	
 	void tuerSteherPlazieren()
 	{
-		gib();
+		Tuersteher tst = new Tuersteher();
+		tuersteher.add(tst);
+		int r,s,rtg;
+		r=this.getReihe();
+		s=this.getSpalte();
+		rtg=this.getBlickrichtung();
+		tst.init(r,s,rtg,0);
 	}
+}
+
+class Tuersteher extends Hamster
+{
+
 }
