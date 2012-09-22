@@ -1,0 +1,14 @@
+main:Main
+kind:Kind
+/ausleihe:Ausleihe
+buch:Buch
+
+main:kind.ausleihen
+kind:anz=kind.anzahlAusleihen
+[c:if anz<3]
+kind[1]:ausleihe=ausleihe.new
+kind:ausleihe.setAnKind(this)
+kind:ausleihe.setBuch(buch)
+kind:buch.setAusgeliehen(true)
+[c:else]
+[/c]
