@@ -1,0 +1,60 @@
+void main() {
+    ZivilSchutzChef zsc = new ZivilSchutzChef();
+	zsc.init(1,2,Hamster.OST,20);
+	zsc.aufbieten();
+}
+class ZivilSchutzChef extends Hamster
+{
+	void aufbieten()
+	{
+		while(getSpalte()!=1 || getReihe()!=1)
+		{
+			if(beiWand())
+				vor();
+			else if(inTuer())
+			{
+				tuerSteherPlazieren();
+				vor();
+			}
+			else
+			{
+				rechtsUm();
+				vor();
+			}
+		}
+	}
+	
+	boolean beiWand()
+	{
+		rechtsUm();
+		boolean b = !vornFrei();
+		linksUm();
+		return b;
+	}
+	
+	void rechtsUm()
+	{ linksUm(); kehrt();}
+	
+	void kehrt()
+	{ linksUm();linksUm();}
+	
+	boolean inTuer()
+	{
+		boolean b = false;
+		rechtsUm();
+		vor();
+		linksUm();
+		b = !vornFrei();
+		kehrt();
+		b &= !vornFrei();
+		rechtsUm();
+		vor();
+		rechtsUm();
+		return b;
+	}
+	
+	void tuerSteherPlazieren()
+	{
+		gib();
+	}
+}
