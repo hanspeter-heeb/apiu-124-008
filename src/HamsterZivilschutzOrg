@@ -66,10 +66,16 @@ class ZivilSchutzChef extends Hamster
 		s=this.getSpalte();
 		rtg=this.getBlickrichtung();
 		tst.init(r,s,rtg,0);
+		tst.inPosition();
 	}
 }
 
-class Tuersteher extends Hamster
+class Tuersteher extends ZivilSchutzChef
 {
-
+	public void inPosition()
+	{
+		rechtsUm();
+		vor();
+		kehrt();
+	}
 }
